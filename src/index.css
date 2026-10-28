@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-atelier-bg: #050608;
+  --color-atelier-card: #0c0e12;
+  --color-atelier-gold: #c59b6d;
+  --color-atelier-cyan: #2dd4bf;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 4px rgba(45, 212, 191, 0.4));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 12px rgba(45, 212, 191, 0.9));
+  }
+}
+
+@keyframes heartbeatWave {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes subtleGoldShift {
+  0%, 100% {
+    border-color: rgba(217, 119, 6, 0.5);
+    box-shadow: 0 0 20px rgba(217, 119, 6, 0.15);
+  }
+  50% {
+    border-color: rgba(245, 158, 11, 0.85);
+    box-shadow: 0 0 32px rgba(245, 158, 11, 0.3);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-gold-glow {
+  animation: subtleGoldShift 4s ease-in-out infinite;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050608;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

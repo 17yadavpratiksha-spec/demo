@@ -1,0 +1,6 @@
+{
+  "name": "Atelier Medical",
+  "description": "Precision, compassion, and trust in modern medical practice. Bespoke concierge healthcare, advanced diagnostics, and evidence-informed care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
